@@ -72,7 +72,7 @@ En los siguentes endpoints podrá crear y visualizar los repositorios
 ###  Obtener métricas de repositorios por tribu
 
   ```
-  http://localhost:3000/getMetric/62d5811280c162ae6cb5c04b
+  http://localhost:3000/getMetric/62d47c2d4da11e87cb72f6af
   ```
 
 Con el fin de obtener las metricas de los repositorios, en el siguiente endpoint las podrá crear
