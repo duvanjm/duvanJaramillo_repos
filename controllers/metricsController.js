@@ -31,6 +31,10 @@ exports.getMetric = async (req, res) => {
     if (response.length < 1) throw Error('Not id found')
 
     const repositories = filterResponse(response);
+
+    if (repositories.coverage * 1 < 75) {
+      return res.status(404).json({ status: 'Fail', message:  'La Tribu no tiene repositorios que cumplan con la cobertura necesaria' })
+    }
     
     res.status(200).json({  repositories  });
   } catch (err) {
